@@ -5,7 +5,7 @@
   "main": "./dist/index.js",
   "typings": "./dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "",
     "build": "rm -fR ./dist/* && tsc",
     "prepublish": "npm run build"
   },
@@ -13,11 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/GeekyAnts/react-firestore.git"
   },
-  "keywords": [
-    "Firebase",
-    "Firestore",
-    "React"
-  ],
+  "keywords": ["Firebase", "Firestore", "React"],
   "author": "sanketsahu@gmail.com",
   "license": "Apache-2.0",
   "bugs": {

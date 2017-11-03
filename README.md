@@ -1,6 +1,6 @@
 # Firestore Data Provider for React Component
 
-`react-firestore` provides `createContainer()` function (inspired by Meteor) which creates a HOC to provide Firestore data for your React Components.
+`firestore-react` provides `createContainer()` function (inspired by Meteor) which creates a HOC to provide Firestore data for your React Components.
 
 ## Provides two things
 
@@ -11,7 +11,7 @@
 
 ```ts
 
-import createContainer from 'react-firebase';
+import createContainer from 'firebase-react';
 
 class App extends React.Component {
   

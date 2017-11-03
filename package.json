@@ -13,7 +13,11 @@
     "type": "git",
     "url": "git+https://github.com/GeekyAnts/react-firestore.git"
   },
-  "keywords": ["Firebase", "Firestore", "React"],
+  "keywords": [
+    "Firebase",
+    "Firestore",
+    "React"
+  ],
   "author": "sanketsahu@gmail.com",
   "license": "Apache-2.0",
   "bugs": {
@@ -25,7 +29,9 @@
   },
   "homepage": "https://github.com/GeekyAnts/react-firestore#readme",
   "dependencies": {
+    "@types/react": "^16.0.19",
     "firebase": "^4.6.0",
+    "react": "^16.0.0",
     "typescript": "^2.5.3"
   }
 }

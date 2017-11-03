@@ -6,7 +6,9 @@
 
 ```ts
 
-import firebase from 'firebase';
+import createContainer from 'react-firebase';
+
+import * as firebase from 'firebase';
 require('firebase/firestore');
 
 const db = firebase.firestore();
@@ -14,7 +16,7 @@ const db = firebase.firestore();
 class App extends React.Component {
   
   render() {
-    // this.props.users received data
+    // this.props.users receives data
   }
 
 }

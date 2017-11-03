@@ -30,3 +30,7 @@ const AppWithData = createContainer(App, (db) => {
 })
 
 ```
+
+## Quick Demo
+
+![alt text](./examples/demo.gif "Demo Firestore React bindings")

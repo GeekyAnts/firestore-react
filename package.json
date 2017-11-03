@@ -1,6 +1,6 @@
 {
   "name": "firestore-react",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Firestore bindings for React components using HOC",
   "main": "./dist/index.js",
   "typings": "./dist/index.d.ts",

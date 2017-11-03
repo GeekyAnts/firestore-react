@@ -4,7 +4,7 @@
 
 ## Examples
 
-```
+```ts
 
 import firebase from 'firebase';
 require('firebase/firestore');

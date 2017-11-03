@@ -1,6 +1,6 @@
 {
   "name": "firestore-react",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Firestore bindings for React components using HOC",
   "main": "./dist/index.js",
   "typings": "./dist/index.d.ts",
@@ -13,7 +13,11 @@
     "type": "git",
     "url": "git+https://github.com/GeekyAnts/react-firestore.git"
   },
-  "keywords": ["Firebase", "Firestore", "React"],
+  "keywords": [
+    "Firebase",
+    "Firestore",
+    "React"
+  ],
   "author": "sanketsahu@gmail.com",
   "license": "Apache-2.0",
   "bugs": {

@@ -1,0 +1,31 @@
+{
+  "name": "react-firestore",
+  "version": "0.1.0",
+  "description": "Firestore bindings for React components using HOC",
+  "main": "./dist/index.js",
+  "typings": "./dist/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rm -fR ./dist/* && tsc",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GeekyAnts/react-firestore.git"
+  },
+  "keywords": ["Firebase", "Firestore", "React"],
+  "author": "sanketsahu@gmail.com",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/GeekyAnts/react-firestore/issues"
+  },
+  "peerDependencies": {
+    "firebase": "^4.5.0",
+    "react": "^16.0.0"
+  },
+  "homepage": "https://github.com/GeekyAnts/react-firestore#readme",
+  "dependencies": {
+    "firebase": "^4.6.0",
+    "typescript": "^2.5.3"
+  }
+}

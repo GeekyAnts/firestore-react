@@ -18,7 +18,8 @@ import createContainer from 'firebase-react';
 class App extends React.Component {
   
   render() {
-    // this.props.users receives data
+    // this.props.users.loading <= Gives you loading status
+    // this.props.users.snapshot <= Gives you Firebase snapshot object of query and it automatically re-renders whenever snapshot updates
   }
 
 }

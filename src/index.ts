@@ -1,7 +1,7 @@
 import * as React from "react";
 import * as firebase from "firebase";
 
-interface QueryMap {
+export interface QueryMap {
   [key: string]: firebase.firestore.Query;
 }
 

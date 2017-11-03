@@ -19,10 +19,10 @@
       "esnext.asynciterable"
     ],
     "sourceMap": true,
-    "allowJs": true,
+    "allowJs": false,
     "jsx": "react",
     "moduleResolution": "node",
-    "rootDir": "src",
+    "rootDir": "./src",
     "forceConsistentCasingInFileNames": true,
     "noImplicitReturns": true,
     "noImplicitThis": true,
@@ -33,6 +33,7 @@
     "experimentalDecorators": true
   },
   "exclude": [
+    "examples",
     "node_modules",
     "build",
     "scripts",

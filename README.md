@@ -7,6 +7,12 @@
 1. Fetches data and passes down to the presentational components
 2. Adds a subscriber to listen to live snapshot updates on the query and also removes the subscriber when component is unmounted.
 
+## Installation
+
+```
+yarn add firestore-react
+```
+
 ## Examples
 
 [Simple List - Source Code](https://github.com/GeekyAnts/firestore-react/blob/master/examples/simple-list/src/App.tsx)

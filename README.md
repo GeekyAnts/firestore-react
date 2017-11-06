@@ -19,7 +19,7 @@ yarn add firestore-react
 
 ```ts
 
-import createContainer from 'firebase-react';
+import createContainer from 'firestore-react';
 
 class App extends React.Component {
   

@@ -64,7 +64,10 @@ export function createContainer(
     }
 
     render(): any {
-      return React.createElement(WrappedComponent, { ...this.state.results });
+      return React.createElement(WrappedComponent, {
+        ...this.state.results,
+        ...this.props
+      });
     }
   };
 }

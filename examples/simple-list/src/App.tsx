@@ -22,7 +22,7 @@ class App extends React.Component<any, any> {
       <div className="App">
         <div className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h2>List of users</h2>
+          <h2>{this.props.name}: List of users</h2>
         </div>
         <p className="App-intro">
           {this.props.users.loading ? <div>Loading</div> : this.renderUsers()}

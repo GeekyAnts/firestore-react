@@ -19,7 +19,7 @@ export function createContainer(
 
     componentWillMount() {
       let db = firebase.firestore();
-      let queryMap: QueryMap = queryMapFn(db);
+      let queryMap: QueryMap = queryMapFn.call(this, db);
 
       this.results = {};
 

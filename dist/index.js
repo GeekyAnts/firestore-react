@@ -29,7 +29,7 @@ export function createContainer(WrappedComponent, queryMapFn) {
         class_1.prototype.componentWillMount = function () {
             var _this = this;
             var db = firebase.firestore();
-            var queryMap = queryMapFn(db);
+            var queryMap = queryMapFn.call(this, db);
             this.results = {};
             for (var key in queryMap) {
                 this.results[key] = {
@@ -69,7 +69,7 @@ export function createContainer(WrappedComponent, queryMapFn) {
             }
         };
         class_1.prototype.render = function () {
-            return React.createElement(WrappedComponent, __assign({}, this.state.results));
+            return React.createElement(WrappedComponent, __assign({}, this.state.results, this.props));
         };
         return class_1;
     }(React.Component));

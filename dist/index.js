@@ -38,25 +38,27 @@ export function createContainer(WrappedComponent, queryMapFn) {
                     snapshot: null
                 };
                 this.results[key].unsubscribe = queryMap[key].onSnapshot(function (snapshot) {
-                    _this.setState({
-                        results: (_a = {},
-                            _a[key] = {
-                                snapshot: snapshot
-                            },
-                            _a)
+                    _this.setState(function (prev) {
+                        return ({
+                            results: Object.assign({}, prev.results, (_a = {},
+                                _a[key] = { snapshot: snapshot },
+                                _a))
+                        });
+                        var _a;
                     });
-                    var _a;
                 });
                 this.results[key].promise.then(function (snapshot) {
-                    _this.setState({
-                        results: (_a = {},
-                            _a[key] = {
-                                loading: false,
-                                snapshot: snapshot
-                            },
-                            _a)
+                    _this.setState(function (prev) {
+                        return ({
+                            results: Object.assign({}, prev.results, (_a = {},
+                                _a[key] = {
+                                    loading: false,
+                                    snapshot: snapshot
+                                },
+                                _a))
+                        });
+                        var _a;
                     });
-                    var _a;
                 });
             }
             this.setState({

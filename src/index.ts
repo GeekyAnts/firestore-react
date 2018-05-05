@@ -7,7 +7,7 @@ export interface QueryMap {
 
 export function createContainer(
   WrappedComponent: any,
-  queryMapFn: (db: any) => QueryMap
+  queryMapFn: (db: any, props: any) => QueryMap
 ) {
   return class extends React.Component<any, any> {
     results: any;

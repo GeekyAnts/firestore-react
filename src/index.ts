@@ -7,7 +7,7 @@ export interface QueryMap {
 
 export function createContainer(
   WrappedComponent: any,
-  queryMapFn: (db: any) => QueryMap
+  queryMapFn: (db: any, props: any) => QueryMap
 ) {
   return class extends React.Component<any, any> {
     results: any;
@@ -19,7 +19,8 @@ export function createContainer(
 
     componentWillMount() {
       let db = firebase.firestore();
-      let queryMap: QueryMap = queryMapFn.call(this, db);
+
+      let queryMap: QueryMap = queryMapFn(db, this.props);
 
       this.results = {};
 

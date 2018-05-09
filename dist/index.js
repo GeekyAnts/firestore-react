@@ -29,7 +29,7 @@ export function createContainer(WrappedComponent, queryMapFn) {
         class_1.prototype.componentWillMount = function () {
             var _this = this;
             var db = firebase.firestore();
-            var queryMap = queryMapFn(db);
+            var queryMap = queryMapFn(db, _this.props);
             this.results = {};
             for (var key in queryMap) {
                 this.results[key] = {

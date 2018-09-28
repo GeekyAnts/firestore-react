@@ -1,4 +1,4 @@
-# [UNMAITAINED] We are no more maintaing this repo!
+# [UNMAINTAINED] We are no more maintaing this repo!
 
 # Firestore Data Provider for React Component
 

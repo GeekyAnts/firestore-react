@@ -19,6 +19,7 @@ export function createContainer(
 
     componentWillMount() {
       let db = firebase.firestore();
+
       let queryMap: QueryMap = queryMapFn(db, this.props);
 
       this.results = {};
@@ -31,24 +32,22 @@ export function createContainer(
         };
 
         this.results[key].unsubscribe = queryMap[key].onSnapshot(snapshot => {
-          this.setState({
-            results: {
-              [key]: {
-                snapshot: snapshot
-              }
-            }
-          });
+          this.setState(prev => ({
+            results: Object.assign({}, prev.results, {
+              [key]: { snapshot }
+            })
+          }));
         });
 
         this.results[key].promise.then((snapshot: any) => {
-          this.setState({
-            results: {
+          this.setState(prev => ({
+            results: Object.assign({}, prev.results, {
               [key]: {
                 loading: false,
-                snapshot: snapshot
+                snapshot
               }
-            }
-          });
+            })
+          }));
         });
       }
 
